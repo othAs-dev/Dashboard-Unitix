@@ -269,7 +269,6 @@ const Graph = () => {
           </div>
         </div>
       );
-      break;
     case "weekly":
       return (
         <div className="cont">
@@ -308,7 +307,6 @@ const Graph = () => {
           </div>
         </div>
       );
-      break;
     case "monthly":
       return (
         <div className="cont">
@@ -339,7 +337,6 @@ const Graph = () => {
           </div>
         </div>
       );
-      break;
     case "yearly":
       return (
         <div className="cont">
@@ -370,7 +367,6 @@ const Graph = () => {
           </div>
         </div>
       );
-      break;
     case "tools":
       return (
         <div className="cont">
@@ -401,7 +397,6 @@ const Graph = () => {
           </div>
         </div>
       );
-      break;
     case "tools by consulting":
       return (
         <div className="cont">
@@ -440,7 +435,6 @@ const Graph = () => {
           </div>
         </div>
       );
-      break;
     default:
       break;
   }

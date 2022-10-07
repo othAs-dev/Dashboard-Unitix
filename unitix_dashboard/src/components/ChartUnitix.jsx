@@ -33,17 +33,14 @@ const ChartUnitix = (props) => {
       return (
         <Bar data={props.data} options={config.options} style={props.style} />
       );
-      break;
     case "line":
       return (
         <Line data={props.data} options={config.options} style={props.style} />
       );
-      break;
     case "pie":
       return (
         <Pie data={props.data} options={config.options} style={props.style} />
       );
-      break;
     default:
       break;
   }

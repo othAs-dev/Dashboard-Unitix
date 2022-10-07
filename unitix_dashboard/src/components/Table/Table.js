@@ -52,11 +52,9 @@ export default function Table() {
           {value.length > 0
             ? tableFilter.map((item) => {
                 return (
-                  <tbody>
+                  <tbody key={item.id}>
                     <tr>
-                      <th scope="row" key={item.id}>
-                        {item.id}
-                      </th>
+                      <th scope="row">{item.id}</th>
                       <td>{item.create}</td>
                       <td>
                         <button className="btn btn-outline-primary">
@@ -74,11 +72,9 @@ export default function Table() {
               })
             : dataSource.map((item) => {
                 return (
-                  <tbody>
+                  <tbody key={item.id}>
                     <tr>
-                      <th scope="row" key={item.id}>
-                        {item.id}
-                      </th>
+                      <th scope="row">{item.id}</th>
                       <td>{item.create}</td>
                       <td>
                         <button className="btn btn-outline-primary">
@@ -109,7 +105,7 @@ export default function Table() {
             </tr>
           </thead>
           {inventory.map((item) => (
-            <tbody>
+            <tbody key={item.id}>
               <tr>
                 <th scope="row">{item.id}</th>
                 <td>{item.delete}</td>

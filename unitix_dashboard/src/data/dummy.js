@@ -1,5 +1,3 @@
-import React from "react";
-
 export const kanbanGrid = [
   { headerText: "To Do", keyField: "Open", allowToggle: true },
 

@@ -63,11 +63,11 @@ export default function Nav() {
                 </span>
               </li>
               <li className=" h4 btnHov p-2">
-                <Link to="/mail" className="mr-1">
+                <Link to="/join" className="mr-1">
                   <i className="bi bi-chat-left-text-fill"></i>
                 </Link>
                 <span className="ms-1 d-none d-md-inline ">
-                  <Link to="/mail" className="text-decoration-none">
+                  <Link to="/join" className="text-decoration-none">
                     Chat
                   </Link>
                 </span>
