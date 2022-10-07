@@ -1,0 +1,69 @@
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none !important;
+}
+ul li a:hover {
+  cursor: pointer;
+}
+a {
+  color: white !important;
+}
+.nav-w {
+  width: 22%;
+}
+.dark {
+  background-color: #000;
+}
+.btnHov:hover {
+  background-color: #ff9d00;
+  border-radius: 10px;
+}
+@media only screen and (max-width: 2060px) {
+  .resize {
+    width: 14%;
+  }
+}
+@media only screen and (max-width: 1640px) {
+  .resize {
+    width: 15%;
+  }
+  a {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .resize {
+    width: 18%;
+  }
+  a {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .resize {
+    width: 18%;
+  }
+  a {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .resize {
+    width: 20%;
+  }
+  a {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .resize {
+    width: 15%;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+  }
+}

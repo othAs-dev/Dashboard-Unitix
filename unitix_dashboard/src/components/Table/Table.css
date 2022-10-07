@@ -1,0 +1,61 @@
+.width {
+  width: 100%;
+  align-items: center;
+}
+button {
+  padding: 5px !important;
+}
+.inputBtn {
+  height: 40px;
+}
+@media only screen and (max-width: 2060px) {
+  .width-tablet {
+    width: 100%;
+    margin: 0 5px 0 5px;
+  }
+}
+@media only screen and (max-width: 1640px) {
+  .width-tablet {
+    width: 100%;
+    margin: 0 5px 0 5px;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .width-tablet {
+    width: 100%;
+    padding: 0 15px 0 15px;
+  }
+  .title {
+    font-size: 35px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .width-tablet {
+    width: 95%;
+    padding: 0 5px 0 5px;
+  }
+  .title {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .width-tablet {
+    width: 85%;
+    padding: 0 5px 0 5px;
+  }
+  button {
+    padding: 5px !important;
+  }
+  .title {
+    font-size: 21px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .width-tablet {
+    width: 100%;
+    padding: 0 5px 0 5px;
+  }
+  .title {
+    font-size: 18px;
+  }
+}
