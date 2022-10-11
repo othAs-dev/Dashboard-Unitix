@@ -21,7 +21,7 @@ export default function Table() {
       setValue(e.target.value);
       setDataSource([...dataSource]);
     }
-  };
+  }; // fonctionnalité qui permet d'executer la recherche sur la table d'utilisateurs.
   return (
     <div className="d-flex flex-column width">
       <div className="input-group mt-4">
@@ -36,6 +36,7 @@ export default function Table() {
           <label className="form-label" htmlFor="form1"></label>
         </div>
       </div>
+      {/*searchbar*/}
       <div className="width-tablet">
         <h2 className="mt-3 text-center title">
           Compte créé au cours de l'année 2022
@@ -92,6 +93,7 @@ export default function Table() {
               })}
         </table>
       </div>
+      {/*premier tableau*/}
       <div className="width-tablet">
         <h2 className="text-center mt-3 title">
           Compte supprimé au cours de l'année 2022
@@ -119,6 +121,7 @@ export default function Table() {
           ))}
         </table>
       </div>
+      {/*deuxieme tableau*/}
     </div>
   );
 }

@@ -35,12 +35,11 @@ const Scheduler = () => {
   return (
     <div className="cont">
       <h2 className="mt-5 mb-5">Calendrier</h2>
-
       <ScheduleComponent
         height="650px"
         ref={(schedule) => setScheduleObj(schedule)}
         selectedDate={new Date(2021, 0, 10)}
-        eventSettings={{ dataSource: scheduleData }}
+        eventSettings={{ dataSource: scheduleData }} //importation des données
         dragStart={onDragStart}
       >
         <ViewsDirective>
@@ -52,6 +51,7 @@ const Scheduler = () => {
           services={[Day, Week, WorkWeek, Month, Agenda, Resize, DragAndDrop]}
         />
       </ScheduleComponent>
+      {/*données importées dans ce composant*/}
       <PropertyPane>
         <table style={{ width: "100%", background: "white" }}>
           <tbody>

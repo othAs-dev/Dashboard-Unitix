@@ -13,10 +13,12 @@
   justify-content: space-between;
   background: #ffffff;
   border-radius: 8px;
-  height: 60%;
-  width: 35%;
+  height: 90%;
+  width: 60%;
 }
-
+.form {
+  height: 80px !important;
+}
 @media (min-width: 320px) and (max-width: 480px) {
   .outerContainer {
     height: 100%;

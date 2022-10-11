@@ -17,7 +17,9 @@ const Kanban = () => {
         dataSource={kanbanData}
         cardSettings={{ contentField: "Summary", headerField: "Id" }}
       >
+        {/*composant qui traite les taches => tableau d'objet*/}
         <ColumnsDirective>
+          {/*composant qui traite les étapes des taches (à faire, en cours, test, fini) => tableau d'objet */}
           {kanbanGrid.map((item, index) => (
             <ColumnDirective key={index} {...item} />
           ))}

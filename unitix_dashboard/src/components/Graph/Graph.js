@@ -4,7 +4,8 @@ import ChartUnitix from "../ChartUnitix";
 import "./Graph.css";
 const Graph = () => {
   const [select, setSelect] = useState();
-
+  // structure des obj => un 1er tabl labels suivi d'un tab d'obj => label, data(tab), bgc, fill
+  console.log(Chart);
   const dataDemandesJours = {
     labels: [
       "00h",
@@ -263,6 +264,7 @@ const Graph = () => {
             <div className={select ? "uniqView" : "box"}>
               <h2>Request number in {select}</h2>
               <ChartUnitix data={dataDemandesJours} type="bar" scale={true} />
+              {/*importation des obj*/}
               <h3>Linear diagram</h3>
               <ChartUnitix data={dataDemandesJours} type="line" scale={true} />
             </div>

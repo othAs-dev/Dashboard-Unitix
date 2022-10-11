@@ -8,12 +8,14 @@ import Kanban from "./components/Kanban/Kanban";
 import Join from "./components/Join/Join";
 import Calendar from "./components/Calendar/Calendar";
 import Chat from "./components/Chat/Chat";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
     <Router>
       <Nav />
       <Routes>
+        <Route exact path="/" element={<Home />} />
         <Route exact path="/donnees-utilisateurs" element={<Table />} />
         <Route exact path="/donnees-utilisateurs/:id" element={<User />} />
         <Route exact path="/graphique" element={<Graph />} />
