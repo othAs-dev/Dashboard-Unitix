@@ -5,9 +5,9 @@ export default function Home() {
   const [room, setRoom] = useState("");
 
   return (
-    <div className="joinOuterContainer">
-      <div className="joinInnerContainer">
-        <h1 className="heading p-2">Login</h1>
+    <div className="joinOuterContainerHome">
+      <div className="joinInnerContainerHome">
+        <h1 className="headingHome p-2">Login</h1>
         <div className="position-relative">
           <div className="d-flex justify-content-end">
             <i className="bi bi-person position-absolute"></i>
@@ -16,7 +16,7 @@ export default function Home() {
           <input
             type="text"
             placeholder="Username"
-            className="joinInput "
+            className="joinInputHome "
             onChange={(e) => setName(e.target.value)}
           />
         </div>
@@ -27,11 +27,11 @@ export default function Home() {
           <input
             type="password"
             placeholder="Password"
-            className="joinInput mt-20"
+            className="joinInputHome mt-20"
             onChange={(e) => setRoom(e.target.value)}
           />
         </div>
-        <button className="button mt-20" type="submit">
+        <button className="buttonHome mt-20" type="submit">
           Login
         </button>
       </div>
