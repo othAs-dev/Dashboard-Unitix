@@ -1,0 +1,82 @@
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.joinOuterContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  padding-top: 12%;
+  background: rgb(252, 252, 248);
+  background: linear-gradient(
+    90deg,
+    rgba(252, 252, 248, 1) 0%,
+    rgba(208, 208, 208, 1) 100%
+  );
+  width: 155%;
+}
+
+.joinInnerContainer {
+  width: 40%;
+}
+
+.joinInput {
+  border-radius: 10px;
+  padding: 15px 20px;
+  width: 100%;
+}
+
+.heading {
+  color: rgb(0, 0, 0);
+  font-size: 2.5em;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(1, 1, 1);
+}
+
+.button {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #050505;
+  padding: 15px 20px !important;
+  display: inline-block;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+i {
+  transform: translate(-50%, 30%);
+  font-size: 25px;
+}
+.lock {
+  transform: translate(-50%, 90%);
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .joinOuterContainer {
+    height: 100%;
+  }
+
+  .joinInnerContainer {
+    width: 90%;
+  }
+}
+
+button:focus {
+  outline: 0;
+}
