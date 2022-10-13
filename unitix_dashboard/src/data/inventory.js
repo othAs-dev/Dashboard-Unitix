@@ -20,7 +20,7 @@ const inventory = [
     id: 4,
   },
   {
-    create: "Dahmene",
+    create: "Damene",
     //delete: "Reda",
     id: 5,
   },
