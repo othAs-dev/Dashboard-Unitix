@@ -72,6 +72,14 @@ export default function Nav() {
                   </Link>
                 </span>
               </li>
+              <li className=" h4 btnHov p-2">
+                <button className="text-decoration-none" onClick={() => {
+                  localStorage.removeItem("token")
+                  window.location.reload();
+                }}>
+                  Se déconnecter
+                </button>
+              </li>
             </ul>
           </div>
         </div>
