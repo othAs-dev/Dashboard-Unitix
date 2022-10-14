@@ -9,6 +9,7 @@ import Join from "./components/Join/Join";
 import Calendar from "./components/Calendar/Calendar";
 import Chat from "./components/Chat/Chat";
 import Home from "./pages/Home/Home";
+import Dashboard from "./pages/dashboard/Dashboard";
 import { createContext, useContext } from "react";
 
 const AuthContext = createContext({
@@ -39,9 +40,10 @@ function App() {
               <Route exact path="/calendar" element={<Calendar />} />
               <Route exact path="/join" element={<Join />} />
               <Route exact path="/chat" element={<Chat />} />
+              <Route exact path="/dashboard" element={<Dashboard />} />
             </>
           )}
-          <Route path="*" element={<Navigate to={isConnected ? "/kanban" : "/"} />} />
+          <Route path="*" element={<Navigate to={isConnected ? "/dashboard" : "/"} />} />
         </Routes>
       </Router>
     </AuthContext.Provider>
